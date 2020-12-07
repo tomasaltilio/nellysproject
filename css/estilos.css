@@ -1,0 +1,240 @@
+/*variables*/
+body {
+  background-color: #ffd6dc;
+  color: #BF366A;
+  margin: 0;
+  max-width: 100%; }
+
+h1 {
+  font-weight: 700px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 500px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif; }
+
+h3 + h4 + h5 {
+  font-family: "Varela Round", sans-serif; }
+
+a {
+  text-decoration: none;
+  font-weight: 300px; }
+
+li {
+  list-style: none; }
+
+p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400px; }
+
+/*Arreglo para el header*/
+.navegacion {
+  color: wheat;
+  background-color: #BF366A; }
+  .navegacion li a {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px 8px;
+    text-decoration: none;
+    color: ivory;
+    margin-inline-end: 55px; }
+  .navegacion :hover {
+    font-weight: bolder; }
+
+.bordeBlanco, .bordeCard {
+  background-color: #ff99a8; }
+
+.bordeRosa, .bordeCardIntro {
+  background-color: #ffd6dc; }
+
+.hero img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 450px; }
+
+.intro img {
+  padding-right: 30px;
+  animation: rotar 2s infinite; }
+
+@keyframes rotar {
+  0% { }
+  50% {
+    transform: rotate(-6deg); }
+  100% { } }
+
+.slider {
+  grid-area: slider;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .slider p {
+    padding-left: 10px; }
+
+.alineado {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-around; }
+
+.inicioCentral img {
+  height: 200px; }
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto; }
+
+.bordeCardIntro {
+  border: 10px solid ivory; }
+
+/* comofunciona.html*/
+.rotate img {
+  transform: rotate(-7deg); }
+
+.bordeCard {
+  border-top: 20px solid ivory;
+  border-left: 20px solid ivory;
+  border-right: 20px solid ivory;
+  border-bottom: 80px solid ivory; }
+
+/* adopcion.html*/
+.adopcion img, .quienesSomos img {
+  object-fit: cover;
+  overflow: visible;
+  border: 5px solid ivory;
+  border-radius: 5%;
+  width: 300px;
+  height: 300px; }
+
+/* quienessomos.html*/
+.quienesSomos img {
+  width: auto;
+  height: 500px; }
+
+.cajaSomosIzq {
+  padding-left: 10rem;
+  padding-right: 3rem; }
+
+.cajaSomosDer {
+  padding-left: 3rem;
+  padding-right: 10rem; }
+
+/* involucrate.html*/
+.title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: #3c2e5a; }
+
+/* Centrado */
+.wrapper {
+  width: 80%;
+  height: 50%;
+  margin: 5% auto 5% auto; }
+
+/* Animacion de form */
+.form {
+  background: #EBEBEB;
+  text-align: center;
+  box-shadow: 0px 0px 20px 5px #AAA;
+  border-radius: 10px;
+  width: 45%;
+  height: 600px;
+  margin: 30px auto 0 auto;
+  padding: 10px 10px; }
+
+.name {
+  background-color: #f5697c;
+  border-bottom: 5px solid #B2175F;
+  color: white;
+  width: 300px;
+  margin: 5px; }
+
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 20px; }
+
+.name:hover {
+  background-color: #f5697c;
+  border-bottom: 5px solid #f5697c;
+  height: 30px;
+  width: 400px; }
+
+.email {
+  background-color: #f5697c;
+  border-bottom: 5px solid #f5697c;
+  color: white;
+  height: 50px;
+  width: 300px;
+  margin: 5px; }
+
+.email:hover {
+  background-color: #f5697c;
+  border-bottom: 5px solid #f5697c;
+  height: 30px;
+  width: 380px; }
+
+.message {
+  background-color: #f5697c;
+  border-bottom: 5px solid #c32311;
+  overflow: hidden;
+  height: 100px;
+  width: 300px;
+  color: white; }
+
+.message:hover {
+  background-color: #f5697c;
+  border-bottom: 5px solid #f5697c;
+  height: 100px;
+  width: 400px; }
+
+.submit {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f5697c;
+  border: none;
+  border-bottom: 5px solid #CB64B2;
+  transform: translateY(-120px); }
+
+.submit:hover {
+  border-bottom: 5px solid #CB64B2;
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219); }
+
+.entry {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 0px 25px 2px #AAA; }
+
+/* titulo */
+.tituloForm {
+  animation: titulo 3s infinite; }
+
+.submit {
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  background-color: #EE78D1;
+  border: none;
+  border-bottom: 5px solid #CB64B2;
+  margin-top: 150px; }
+
+@keyframes titulo {
+  0% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(5deg); } }
