@@ -1,17 +1,33 @@
 {
-  "name": "desafio-11",
+  "name": "nellys-project",
   "version": "1.0.0",
-  "description": "Prueba de SASS",
+  "description": "Pagina para adopcion de perros",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Tomas Altilio",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasaltilio/nellysproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomasaltilio/nellysproject/issues"
+  },
+  "homepage": "https://github.com/tomasaltilio/nellysproject#readme",
+  "keywords": [
+    "Pagina",
+    "para",
+    "adopcion",
+    "de",
+    "perros"
+  ]
 }

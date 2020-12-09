@@ -10,7 +10,8 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 20px;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em; }
 
 h2 {
   text-transform: uppercase;
@@ -54,12 +55,7 @@ p {
 
 .hero img {
   object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-  max-height: 450px; 
-    
-}
-  
+  overflow: hidden; }
 
 .intro img {
   padding-right: 30px;
@@ -79,15 +75,6 @@ p {
   align-items: center; }
   .slider p {
     padding-left: 10px; }
-
-.alineado {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: space-around; }
-
-.inicioCentral img {
-  height: 200px; }
 
 .card-horizontal {
   display: flex;
@@ -112,12 +99,12 @@ p {
   overflow: visible;
   border: 5px solid ivory;
   border-radius: 5%;
-  width: 300px;
+  max-width: 300px;
   height: 300px; }
 
 /* quienessomos.html*/
 .quienesSomos img {
-  width: auto;
+  max-width: auto;
   height: 500px; }
 
 .cajaSomosIzq {
@@ -241,3 +228,10 @@ p {
     transform: rotate(-5deg); }
   100% {
     transform: rotate(5deg); } }
+
+@media (max-width: 768px) {
+  body h3 {
+    font-size: 1.2em; }
+  body .img-fluid-modificado {
+    max-width: 10em;
+    height: 10em; } }

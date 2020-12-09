@@ -8,7 +8,7 @@ $fondo-blanco:#ffd6dc;
 $fondo-rosa:  #ff99a8;
 
 @mixin size($ancho, $alto) {
-  width: $ancho;
+  max-width: $ancho;
   height: $alto;  
 }
 
@@ -34,6 +34,7 @@ h1
     text-align: center;
     padding-bottom: 20px;
     font-family: $fuente-titulos;
+    font-size: 2em;
 }
 
 h2
@@ -42,7 +43,9 @@ h2
     font-weight: 500px;
     text-align: center;
     font-family: $fuente-titulos;
+    
 }
+
 
 h3 + h4 + h5 {
   font-family: $fuente-parrafos;
@@ -106,7 +109,6 @@ p {
     object-fit: cover;
     overflow: hidden;
 
-    @include size(100%, 450px)
     
   };
 }
@@ -151,22 +153,6 @@ p {
 
 }
 
-
-
-
-.alineado {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-content: space-around;
-}
-
-
-
-.inicioCentral img {
-  height: 200px;
-  
-}
 
 .card-horizontal {
   display: flex;
@@ -384,6 +370,20 @@ p {
     }
     100%{
       transform: rotate(5deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    body {
+      h3{
+        font-size: 1.2em;
+      }
+      .img-fluid-modificado {
+        @include size(10em, 10em) 
+      }
+      .card-horizontal {
+        flex: auto;
+      }
     }
   }
 
